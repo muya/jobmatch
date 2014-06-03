@@ -1,0 +1,15 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include '_includes/header.html' %}
+    <link href="{% static 'auth/css/signin.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+
+    {% include '_includes/footer.html' %}
+
+  </body>
+</html>

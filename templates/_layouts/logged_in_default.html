@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include '_includes/header.html' %}
+  </head>
+  <body>
+    <a class="sr-only" href="#content">Skip to main content</a>
+
+    <!-- Docs master nav -->
+    {% include '_includes/nav-main.html' %}
+
+    
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-9" role="main">
+          {% block content %}{% endblock %}
+        </div>
+        <div class="col-md-3">
+          
+        </div>
+      </div>
+
+    </div>
+
+    {% include '_includes/footer.html' %}
+
+  </body>
+</html>

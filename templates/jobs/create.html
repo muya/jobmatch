@@ -1,0 +1,18 @@
+{% extends '_layouts/logged_in_default.html' %}
+{% load staticfiles %}
+{% block content %}
+	<div class="container">
+		<h1>Post a new Job</h1>
+		<form role="form" action="new" method="post">
+			<div class="form-group">{% csrf_token %}
+				<label for="id_name">Position</label>
+				<input type="text" class="form-control" id="id_name" name="id_name" placeholder="">
+			</div>
+			<div class="form-group">
+				<label for="id_description">Description</label>
+				<textarea class="form-control" id="id_description" name="id_description" rows="3"></textarea>
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+{% endblock %}
